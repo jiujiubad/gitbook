@@ -13,6 +13,7 @@
     "-lunr", "-search", "search-plus",
     "expandable-chapters-small",
     "anchor-navigation-ex",
+    "simple-page-toc",
     "github-buttons"
   ],
   "pluginsConfig": {
@@ -25,6 +26,10 @@
         "count": true
         }
       ]
+    },
+    "simple-page-toc": {
+      "maxDepth": 3,
+      "skipFirstH1": true
     }
   }
 }

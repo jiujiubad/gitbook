@@ -1,9 +1,11 @@
 # Gitbook and my ebooks
-第一部分介绍 Gitbook 的使用，以及用脚本部署到 Github-Pages；第二部分是用过的技术栈所要整理出来的 ebooks 电子书。
+第一部分介绍 Gitbook 的使用，以及用脚本部署到 Github-Pages；第二部分是用过的技术栈所要整理出来的多本 ebooks 电子书，包括前后端类、工具类、运维类、项目类。
 
 ## Gitbook 教程
 【精】2019-03-14 如何优雅地使用Gitbook：<https://cloud.tencent.com/developer/article/1404934>
 【精】GitBook 使用教程：<http://gitbook.zhangjikai.com/>
+
+写 Markdown 时，标题不用写序号，因为 gitbook 插件 "anchor-navigation-ex" 会根据标题 h1-h3 字号自动加上 1/1.1/1.1.1
 
 ### gitbook 插件  
 常用插件如下：  
@@ -12,6 +14,15 @@
 * "-lunr", "-search", "search-plus"：中文搜索, 需要将默认的 search 和 lunr 插件去掉
 * "expandable-chapters-small"：使左侧目录可以折叠
 * "anchor-navigation-ex"：添加Toc到侧边悬浮导航以及回到顶部按钮
+* "simple-page-toc"：自动生成本页的目录结构，使用时在页面添加 `<!-- toc -->`
+```
+"pluginsConfig": {
+  "simple-page-toc": {
+    "maxDepth": 3,
+    "skipFirstH1": true
+  }
+}
+```
 * "github-buttons"：添加项目在 github 上的 star，watch，fork情况
 
 `touch book.json` 新建文件并填写
@@ -98,10 +109,20 @@ chmod a+x ./deploy.sh
 ```
 部署完成！！打开页面 https://github名称.github.io/仓库名称 查看电子书
 
+### 生成电子书（pdf/mobi/epub）
+下载安装 Calibre（自带有 ebook-convert 插件）：<https://calibre-ebook.com/download>   
+```
+sudo ln -s /Applications/calibre.app/Contents/MacOS/ebook-convert /usr/local/bin #创建ebook-convert链接
+gitbook pdf .   #在当前目录生成pdf
+gitbook mobi .  #在当前目录生成mobi
+gitbook epub .  #在当前目录生成epub
+```
+在线压缩 pdf：<https://www.pdf2go.com/compress-pdf>
+
 ## 前后端 ebooks
 * 《ROR指南》
 * 《Yaml指南》
-* 《html和css指南》
+* 《bootstrap+html+css指南》
 * 《微信小程序指南》
 * 《Jquery|JavaScript|Ajax指南》
 * 《TypeScript指南》
