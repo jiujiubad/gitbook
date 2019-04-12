@@ -84,7 +84,14 @@ git add -A
 git commit -m $cur_date
 git push -f origin gh-pages
 ```
-给脚本授权，并执行脚本
+`touch .gitignore` 新建并填写 git 忽略文件
+```
+# 生成的静态 html 文件
+_book
+# 部署脚本生成的文件
+.deploy_git
+```
+给脚本授权，并执行脚本。以后每次修改电子书，执行 `git push origin master` 后只要执行 `./deploy.sh` 就能自动部署到 gh-pages 分支。
 ```
 chmod a+x ./deploy.sh
 ./deploy.sh
