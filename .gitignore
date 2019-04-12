@@ -1,1 +1,5 @@
+# 生成的静态 html 文件
 _book
+
+# 部署脚本生成的文件
+.deploy_git
