@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # 设置远程仓库的地址
 remote_url=git@github.com:jiujiubad/gitbook-test.git
 # 获取当前时间

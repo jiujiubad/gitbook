@@ -1,21 +1,30 @@
 {
-  "title" : "Gitbook Use",
-  "author" : "chu",
-  "language" : "zh-hans",
-  "links" : {
-  "sidebar" : {
-  "Home" : "https://xiaochu.cf"
-  }
+  "title": "Gitbook Use",
+  "author": "chu",
+  "language": "zh-hans",
+  "links": {
+    "sidebar": {
+      "Home": "https://xiaochu.cf"
+    }
   },
   "plugins": [
-  "mathjax",
-  "splitter",
-  "github-buttons",
-  "copy-code-button",
-  "-lunr",
-  "-search",
-  "search-plus",
-  "expandable-chapters-small",
-  "anchor-navigation-ex"
-  ]
- }
+    "splitter",
+    "copy-code-button",
+    "-lunr", "-search", "search-plus",
+    "expandable-chapters-small",
+    "anchor-navigation-ex",
+    "github-buttons"
+  ],
+  "pluginsConfig": {
+    "github-buttons": {
+      "buttons": [{
+        "user": "jiujiubad",
+        "repo": "gitbook",
+        "type": ["star"],
+        "size": "small",
+        "count": true
+        }
+      ]
+    }
+  }
+}
