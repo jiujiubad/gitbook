@@ -2,8 +2,11 @@
 ## 关于作者
 网名：chu  
 微信：jiujiubad  
+邮箱：jiujiubad@gmail.com
 github：https://github.com/jiujiubad   
 博客：https://xiaochu.cf   
+
+> 加好友或来信时，请简单说明在哪看到我的，谢谢！
 
 ## 关于本书
 把使用过的技术栈，整理成多本 ebooks 电子书，包括： 
