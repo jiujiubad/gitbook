@@ -1,0 +1,1599 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>天气预报（Api） · Gitbook Use</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="chu">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="微博（一个模型内两者多对多）.html" />
+    
+    
+    <link rel="prev" href="列车订票系统（Api）.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"jiujiubad","repo":"gitbook","type":["star"],"size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://xiaochu.cf" target="_blank" class="custom-link">🍺我的博客</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    🍺关于本书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <a target="_blank" href="https://xiaochu.cf">
+            
+                    
+                    📖前后端类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Ruby On Rails 指南.html">
+            
+                <a href="../Ruby On Rails 指南.html">
+            
+                    
+                    《Ruby On Rails 指南》
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="1项目及需求.html">
+            
+                <a href="1项目及需求.html">
+            
+                    
+                    1项目及需求
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="Erp.html">
+            
+                <a href="Erp.html">
+            
+                    
+                    Erp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="停车计费程序（Rspec 测试）.html">
+            
+                <a href="停车计费程序（Rspec 测试）.html">
+            
+                    
+                    停车计费程序（Rspec 测试）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="分享贴文和点赞网（Ajax）.html">
+            
+                <a href="分享贴文和点赞网（Ajax）.html">
+            
+                    
+                    分享贴文和点赞网（Ajax）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="列车订票系统（Api）.html">
+            
+                <a href="列车订票系统（Api）.html">
+            
+                    
+                    列车订票系统（Api）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.1.5" data-path="天气预报（Api）.html">
+            
+                <a href="天气预报（Api）.html">
+            
+                    
+                    天气预报（Api）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="微博（一个模型内两者多对多）.html">
+            
+                <a href="微博（一个模型内两者多对多）.html">
+            
+                    
+                    微博（一个模型内两者多对多）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7" data-path="投票系统.html">
+            
+                <a href="投票系统.html">
+            
+                    
+                    投票系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.8" data-path="招聘网.html">
+            
+                <a href="招聘网.html">
+            
+                    
+                    招聘网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.9" data-path="有学.html">
+            
+                <a href="有学.html">
+            
+                    
+                    有学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.10" data-path="活动报名系统（百宝箱）.html">
+            
+                <a href="活动报名系统（百宝箱）.html">
+            
+                    
+                    活动报名系统（百宝箱）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.11" data-path="电影影评网.html">
+            
+                <a href="电影影评网.html">
+            
+                    
+                    电影影评网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.12" data-path="码云机考题.html">
+            
+                <a href="码云机考题.html">
+            
+                    
+                    码云机考题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.13" data-path="讨论区.html">
+            
+                <a href="讨论区.html">
+            
+                    
+                    讨论区
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.14" data-path="购物网.html">
+            
+                <a href="购物网.html">
+            
+                    
+                    购物网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.15" data-path="闰年程序(Rspec 测试">
+            
+                <span>
+            
+                    
+                    闰年程序(Rspec 测试)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../2/2功能-rails.html">
+            
+                <a href="../2/2功能-rails.html">
+            
+                    
+                    2功能-rails
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../2/ror 资料.html">
+            
+                <a href="../2/ror 资料.html">
+            
+                    
+                    ror 资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../2/0未整理.html">
+            
+                <a href="../2/0未整理.html">
+            
+                    
+                    0未整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../2/bootstrap 模板使用.html">
+            
+                <a href="../2/bootstrap 模板使用.html">
+            
+                    
+                    bootstrap 模板使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../2/heroku常用命令.html">
+            
+                <a href="../2/heroku常用命令.html">
+            
+                    
+                    heroku常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../2/scaffold 脚手架.html">
+            
+                <a href="../2/scaffold 脚手架.html">
+            
+                    
+                    scaffold 脚手架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6" data-path="../2/数据库查询.html">
+            
+                <a href="../2/数据库查询.html">
+            
+                    
+                    数据库查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.7" data-path="../2/方法-current_user|current_cart.html">
+            
+                <a href="../2/方法-current_user|current_cart.html">
+            
+                    
+                    方法-current_user|current_cart
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.8" data-path="../2/方法-title.html">
+            
+                <a href="../2/方法-title.html">
+            
+                    
+                    方法-title
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.9" data-path="../2/注册登录模块-devise.html">
+            
+                <a href="../2/注册登录模块-devise.html">
+            
+                    
+                    注册登录模块-devise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.10" data-path="../2/注册登录模块-自定制.html">
+            
+                <a href="../2/注册登录模块-自定制.html">
+            
+                    
+                    注册登录模块-自定制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.11" data-path="../2/用户故事.html">
+            
+                <a href="../2/用户故事.html">
+            
+                    
+                    用户故事
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.12" data-path="../2/表单.html">
+            
+                <a href="../2/表单.html">
+            
+                    
+                    表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../3/3功能-gem.html">
+            
+                <a href="../3/3功能-gem.html">
+            
+                    
+                    3功能-gem
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../3/前端样式.html">
+            
+                <a href="../3/前端样式.html">
+            
+                    
+                    前端样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../3/功能-Excel.html">
+            
+                <a href="../3/功能-Excel.html">
+            
+                    
+                    功能-Excel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../3/功能-Markdown.html">
+            
+                <a href="../3/功能-Markdown.html">
+            
+                    
+                    功能-Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../3/开发必备.html">
+            
+                <a href="../3/开发必备.html">
+            
+                    
+                    开发必备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="../3/权限管理.html">
+            
+                <a href="../3/权限管理.html">
+            
+                    
+                    权限管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="../3/调试.html">
+            
+                <a href="../3/调试.html">
+            
+                    
+                    调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../4/4方法-api.html">
+            
+                <a href="../4/4方法-api.html">
+            
+                    
+                    4方法-api
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../4/rails-c-build 和 new 的区别.html">
+            
+                <a href="../4/rails-c-build 和 new 的区别.html">
+            
+                    
+                    rails-c-build 和 new 的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../4/rails-c-filter(params">
+            
+                <span>
+            
+                    
+                    rails-c-filter(params)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../4/rails-m-destroy 和 delete_all 的区别.html">
+            
+                <a href="../4/rails-m-destroy 和 delete_all 的区别.html">
+            
+                    
+                    rails-m-destroy 和 delete_all 的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="../4/rails-m-empty?、blank?、any?、exist? 的区别.html">
+            
+                <a href="../4/rails-m-empty?、blank?、any?、exist? 的区别.html">
+            
+                    
+                    rails-m-empty?、blank?、any?、exist? 的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.5" data-path="../4/rails-v-form_with、form_for、form_tag 的区别.html">
+            
+                <a href="../4/rails-v-form_with、form_for、form_tag 的区别.html">
+            
+                    
+                    rails-v-form_with、form_for、form_tag 的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.6" data-path="../4/ruby-string.html">
+            
+                <a href="../4/ruby-string.html">
+            
+                    
+                    ruby-string
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../5/5项目规范.html">
+            
+                <a href="../5/5项目规范.html">
+            
+                    
+                    5项目规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../5/命名与描述.html">
+            
+                <a href="../5/命名与描述.html">
+            
+                    
+                    命名与描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../5/重构.html">
+            
+                <a href="../5/重构.html">
+            
+                    
+                    重构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../5/项目初始化.html">
+            
+                <a href="../5/项目初始化.html">
+            
+                    
+                    项目初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="../5/项目步骤.html">
+            
+                <a href="../5/项目步骤.html">
+            
+                    
+                    项目步骤
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../6/6测试.html">
+            
+                <a href="../6/6测试.html">
+            
+                    
+                    6测试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../6/Minitest.html">
+            
+                <a href="../6/Minitest.html">
+            
+                    
+                    Minitest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../6/Rspec.html">
+            
+                <a href="../6/Rspec.html">
+            
+                    
+                    Rspec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../7/7元编程.html">
+            
+                <a href="../7/7元编程.html">
+            
+                    
+                    7元编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1" data-path="../7/api.html">
+            
+                <a href="../7/api.html">
+            
+                    
+                    api
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../bootstrap|html|css 指南/bootstrap|html|css 指南.html">
+            
+                <a href="../../bootstrap|html|css 指南/bootstrap|html|css 指南.html">
+            
+                    
+                    《bootstrap|html|css 指南》
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../bootstrap|html|css 指南/1/1常用模块.html">
+            
+                <a href="../../bootstrap|html|css 指南/1/1常用模块.html">
+            
+                    
+                    1常用模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../bootstrap|html|css 指南/1/footer.html">
+            
+                <a href="../../bootstrap|html|css 指南/1/footer.html">
+            
+                    
+                    footer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../bootstrap|html|css 指南/1/navbar.html">
+            
+                <a href="../../bootstrap|html|css 指南/1/navbar.html">
+            
+                    
+                    navbar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../../bootstrap|html|css 指南/1/全局.html">
+            
+                <a href="../../bootstrap|html|css 指南/1/全局.html">
+            
+                    
+                    全局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../../bootstrap|html|css 指南/1/合作伙伴.html">
+            
+                <a href="../../bootstrap|html|css 指南/1/合作伙伴.html">
+            
+                    
+                    合作伙伴
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.5" data-path="../../bootstrap|html|css 指南/1/商品展示.html">
+            
+                <a href="../../bootstrap|html|css 指南/1/商品展示.html">
+            
+                    
+                    商品展示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.6" data-path="../../bootstrap|html|css 指南/1/大图轮播.html">
+            
+                <a href="../../bootstrap|html|css 指南/1/大图轮播.html">
+            
+                    
+                    大图轮播
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7" data-path="../../bootstrap|html|css 指南/1/服务优势.html">
+            
+                <a href="../../bootstrap|html|css 指南/1/服务优势.html">
+            
+                    
+                    服务优势
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.8" data-path="../../bootstrap|html|css 指南/1/用户反馈.html">
+            
+                <a href="../../bootstrap|html|css 指南/1/用户反馈.html">
+            
+                    
+                    用户反馈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.9" data-path="../../bootstrap|html|css 指南/1/立即购买.html">
+            
+                <a href="../../bootstrap|html|css 指南/1/立即购买.html">
+            
+                    
+                    立即购买
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../bootstrap|html|css 指南/2/2常用组件.html">
+            
+                <a href="../../bootstrap|html|css 指南/2/2常用组件.html">
+            
+                    
+                    2常用组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../bootstrap|html|css 指南/2/@media 媒体监听.html">
+            
+                <a href="../../bootstrap|html|css 指南/2/@media 媒体监听.html">
+            
+                    
+                    @media 媒体监听
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../bootstrap|html|css 指南/2/fontawesome doesn't work 显示为正方形.html">
+            
+                <a href="../../bootstrap|html|css 指南/2/fontawesome doesn't work 显示为正方形.html">
+            
+                    
+                    fontawesome doesn't work 显示为正方形
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../../bootstrap|html|css 指南/2/margin 实现居中、右对齐、左对齐.html">
+            
+                <a href="../../bootstrap|html|css 指南/2/margin 实现居中、右对齐、左对齐.html">
+            
+                    
+                    margin 实现居中、右对齐、左对齐
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="../../bootstrap|html|css 指南/2/ul 和 li 横向并排，圆点改成图标.html">
+            
+                <a href="../../bootstrap|html|css 指南/2/ul 和 li 横向并排，圆点改成图标.html">
+            
+                    
+                    ul 和 li 横向并排，圆点改成图标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5" data-path="../../bootstrap|html|css 指南/2/下分割线.html">
+            
+                <a href="../../bootstrap|html|css 指南/2/下分割线.html">
+            
+                    
+                    下分割线
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6" data-path="../../bootstrap|html|css 指南/2/去除Bootstrap输入框聚焦时的边框轮廓线.html">
+            
+                <a href="../../bootstrap|html|css 指南/2/去除Bootstrap输入框聚焦时的边框轮廓线.html">
+            
+                    
+                    去除Bootstrap输入框聚焦时的边框轮廓线
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.7" data-path="../../bootstrap|html|css 指南/2/大盒子影子边框效果.html">
+            
+                <a href="../../bootstrap|html|css 指南/2/大盒子影子边框效果.html">
+            
+                    
+                    大盒子影子边框效果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.8" data-path="../../bootstrap|html|css 指南/2/字体 font-family.html">
+            
+                <a href="../../bootstrap|html|css 指南/2/字体 font-family.html">
+            
+                    
+                    字体 font-family
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.9" data-path="../../bootstrap|html|css 指南/2/完全隐藏元素.html">
+            
+                <a href="../../bootstrap|html|css 指南/2/完全隐藏元素.html">
+            
+                    
+                    完全隐藏元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.10" data-path="../../bootstrap|html|css 指南/2/截断文字，用...结尾.html">
+            
+                <a href="../../bootstrap|html|css 指南/2/截断文字，用...结尾.html">
+            
+                    
+                    截断文字，用...结尾
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.11" data-path="../../bootstrap|html|css 指南/2/搜索框.html">
+            
+                <a href="../../bootstrap|html|css 指南/2/搜索框.html">
+            
+                    
+                    搜索框
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../bootstrap|html|css 指南/3/3常用功能.html">
+            
+                <a href="../../bootstrap|html|css 指南/3/3常用功能.html">
+            
+                    
+                    3常用功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../../bootstrap|html|css 指南/3/固定宽高的图片大小屏幕自适应-bootstrap方式（建议）.html">
+            
+                <a href="../../bootstrap|html|css 指南/3/固定宽高的图片大小屏幕自适应-bootstrap方式（建议）.html">
+            
+                    
+                    固定宽高的图片大小屏幕自适应-bootstrap方式（建议）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="../../bootstrap|html|css 指南/3/固定宽高的图片大小屏幕自适应-css方式.html">
+            
+                <a href="../../bootstrap|html|css 指南/3/固定宽高的图片大小屏幕自适应-css方式.html">
+            
+                    
+                    固定宽高的图片大小屏幕自适应-css方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="../../bootstrap|html|css 指南/3/横向并排.html">
+            
+                <a href="../../bootstrap|html|css 指南/3/横向并排.html">
+            
+                    
+                    横向并排
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4" data-path="../../bootstrap|html|css 指南/3/横向并排-一行元素两端对齐.html">
+            
+                <a href="../../bootstrap|html|css 指南/3/横向并排-一行元素两端对齐.html">
+            
+                    
+                    横向并排-一行元素两端对齐
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5" data-path="../../bootstrap|html|css 指南/3/横向并排-一行元素位置自定义.html">
+            
+                <a href="../../bootstrap|html|css 指南/3/横向并排-一行元素位置自定义.html">
+            
+                    
+                    横向并排-一行元素位置自定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.6" data-path="../../bootstrap|html|css 指南/3/横向并排-一行右边h1左边图标icon.html">
+            
+                <a href="../../bootstrap|html|css 指南/3/横向并排-一行右边h1左边图标icon.html">
+            
+                    
+                    横向并排-一行右边h1左边图标icon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.7" data-path="../../bootstrap|html|css 指南/3/横向并排-一行左边h1右边图标icon.html">
+            
+                <a href="../../bootstrap|html|css 指南/3/横向并排-一行左边h1右边图标icon.html">
+            
+                    
+                    横向并排-一行左边h1右边图标icon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.8" data-path="../../bootstrap|html|css 指南/3/横向并排-多行元素两端对齐.html">
+            
+                <a href="../../bootstrap|html|css 指南/3/横向并排-多行元素两端对齐.html">
+            
+                    
+                    横向并排-多行元素两端对齐
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.9" data-path="../../bootstrap|html|css 指南/3/鼠标悬停显示遮罩层-css 方式（建议）.html">
+            
+                <a href="../../bootstrap|html|css 指南/3/鼠标悬停显示遮罩层-css 方式（建议）.html">
+            
+                    
+                    鼠标悬停显示遮罩层-css 方式（建议）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.10" data-path="../../bootstrap|html|css 指南/3/鼠标悬停显示遮罩层-jquery 方式.html">
+            
+                <a href="../../bootstrap|html|css 指南/3/鼠标悬停显示遮罩层-jquery 方式.html">
+            
+                    
+                    鼠标悬停显示遮罩层-jquery 方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.11" data-path="../../bootstrap|html|css 指南/3/鼠标悬停显示遮罩层-提高.html">
+            
+                <a href="../../bootstrap|html|css 指南/3/鼠标悬停显示遮罩层-提高.html">
+            
+                    
+                    鼠标悬停显示遮罩层-提高
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    📖工具类
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Ruby On Rails 指南.html">
+            
+                <a href="../Ruby On Rails 指南.html">
+            
+                    
+                    《Ruby On Rails 指南》
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    📖运维类
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Ruby On Rails 指南.html">
+            
+                <a href="../Ruby On Rails 指南.html">
+            
+                    
+                    《Ruby On Rails 指南》
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    📖团队类
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Ruby On Rails 指南.html">
+            
+                <a href="../Ruby On Rails 指南.html">
+            
+                    
+                    《Ruby On Rails 指南》
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >天气预报（Api）</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#26-&#x5929;&#x6C14;&#x9884;&#x62A5;&#xFF08;api&#xFF09;"><b>1.1. </b>2.6 &#x5929;&#x6C14;&#x9884;&#x62A5;&#xFF08;Api&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#261-&#x9700;&#x6C42;"><b>1.1.1. </b>2.6.1 &#x9700;&#x6C42;</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="26-&#x5929;&#x6C14;&#x9884;&#x62A5;&#xFF08;api&#xFF09;"><a name="26-&#x5929;&#x6C14;&#x9884;&#x62A5;&#xFF08;api&#xFF09;" class="anchor-navigation-ex-anchor" href="#26-&#x5929;&#x6C14;&#x9884;&#x62A5;&#xFF08;api&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. 2.6 &#x5929;&#x6C14;&#x9884;&#x62A5;&#xFF08;Api&#xFF09;</h2>
+<p>@data7 Web API &#x5B9E;&#x4F5C; 1-1 to 2-6&#xFF1A;<a href="https://xiaochu.ga/Content/syllabus_dsrUtj.html" target="_blank">https://xiaochu.ga/Content/syllabus_dsrUtj.html</a></p>
+<h3 id="261-&#x9700;&#x6C42;"><a name="261-&#x9700;&#x6C42;" class="anchor-navigation-ex-anchor" href="#261-&#x9700;&#x6C42;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. 2.6.1 &#x9700;&#x6C42;</h3>
+<ul>
+<li>&#x4E32;&#x63A5; &#x805A;&#x5408;&#x6570;&#x636E; &#x5168;&#x56FD;&#x5929;&#x6C14;&#x9884;&#x62A5; &#x7684; API&#xFF0C;&#x5B58;&#x4E0B;&#x6240;&#x6709;&#x57CE;&#x5E02;&#x8D44;&#x6599;&#xFF0C;&#x5E76;&#x66F4;&#x65B0;&#x6307;&#x5B9A;&#x57CE;&#x5E02;&#x7684;&#x5929;&#x6C14;&#x4FE1;&#x606F;&#x3002;</li>
+<li>&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A; City model&#xFF0C;&#x7136;&#x540E;&#x628A; API &#x6293;&#x53D6;&#x56DE;&#x6765;&#x7684;&#x57CE;&#x5E02;&#x8D44;&#x6599;&#x5B58;&#x8FDB;&#x6570;&#x636E;&#x5E93;</li>
+<li>&#x65B0;&#x589E; cities controller &#x548C;&#x9875;&#x9762;&#xFF0C;&#x8BA9;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x6D4F;&#x89C8;&#x57CE;&#x5E02;&#x8D44;&#x6599;</li>
+<li>&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x66F4;&#x65B0;&#x6307;&#x5B9A;&#x57CE;&#x5E02;&#x7684;&#x6C14;&#x6E29;&#x8D44;&#x8BAF;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="列车订票系统（Api）.html" class="navigation navigation-prev " aria-label="Previous page: 列车订票系统（Api）">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="微博（一个模型内两者多对多）.html" class="navigation navigation-next " aria-label="Next page: 微博（一个模型内两者多对多）">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"天气预报（Api）","level":"1.3.1.5","depth":3,"next":{"title":"微博（一个模型内两者多对多）","level":"1.3.1.6","depth":3,"path":"前后端/Ruby On Rails 指南/1/微博（一个模型内两者多对多）.md","ref":"前后端/Ruby On Rails 指南/1/微博（一个模型内两者多对多）.md","articles":[]},"previous":{"title":"列车订票系统（Api）","level":"1.3.1.4","depth":3,"path":"前后端/Ruby On Rails 指南/1/列车订票系统（Api）.md","ref":"前后端/Ruby On Rails 指南/1/列车订票系统（Api）.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","copy-code-button","-lunr","-search","search-plus","expandable-chapters-small","anchor-navigation-ex","simple-page-toc","github-buttons"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"github-buttons":{"buttons":[{"user":"jiujiubad","repo":"gitbook","type":["star"],"size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"chu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","language":"zh-hans","links":{"sidebar":{"🍺我的博客":"https://xiaochu.cf"}},"gitbook":"*"},"file":{"path":"前后端/Ruby On Rails 指南/1/天气预报（Api）.md","mtime":"2019-04-13T00:16:58.851Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-13T08:34:16.512Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
